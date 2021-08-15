@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+       ul {
+           
+           list-style-type: none;
+           display: flex;
+       }
+       ul li {
+           width: 300px;
+        
+           display: block;
+           background-color: lightblue;
+           color: red;
+           text-align: center;
+           border-right: 1px solid gray;
+       }
+
+       ul li:hover{
+           cursor: pointer;
+           background-color: lightpink;
+       }
+
+       .active_tab {
+            background-color: blue;   
+            color: #ffffff;
+       }
+
+       .tab_content > div {
+           display: none;
+       }
+
+       .active_content {
+           display: block !important;
+       }
+
+       body > div{
+           display:flex;
+           justify-content:center
+       }
+
+       body > div > div{
+           display: flex ;
+           flex-direction:column;
+       }
+
+       body > div > div > div{
+           margin-top: 10px;
+           display: flex;
+           justify-content: flex-end;
+       }
+
+       button{
+           background-color: purple;
+           color: #fff;
+           border: none;
+           margin-right: 15px;
+       }
+
+       button:hover{
+           cursor: pointer;
+       }
+
+       button:disabled{
+           opacity: 0.5;
+           pointer-events: none;
+       }
+
+       
+    </style>
+</head>
+<body>
+<!--     
+    <div class="wrapper">
+        <ul>
+            <li class="active_tab">London</li>
+            <li>Paris</li>
+            <li>Tokyo</li>
+        </ul>
+
+    
+       
+    </div>
+    <div class="tab_content">
+        <div class="active_content">
+            Content 1
+        </div>
+
+    
+        <div>
+           Content 2
+        </div>
+
+        <div>
+            Content 3
+        </div>
+    </div> -->
+
+    <div>
+      <div>
+        <input type="text">
+
+    
+        <div>
+            <button class="cancel">Hủy</button>
+            <button class="comment" disabled>Bình luận</button>
+        </div>
+
+       
+      </div>
+    </div>
+    <span class="messages">
+
+    </span>
+    
+
+
+    <script src='./scripts.js'></script>
+</body>
+</html>
