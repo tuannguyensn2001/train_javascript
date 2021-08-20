@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .show_message {
+            display: block;
+        }
+
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- <div class='flex justify-center '>
+        <div class='flex flex-col w-40 '>
+            <div class='w-full overflow-y-scroll overflow-x-scroll operator'></div>
+            <div class='w-full flex result justify-end'></div>
+        <div class="grid grid-cols-4 w-40  " >
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>7</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>8</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>9</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>*</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>4</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>5</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>6</button>
+            <button class='bg-green-400 item  rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>-</button>
+            <button class='bg-green-400  item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>1</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>2</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>3</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>+</button>
+            <button class='bg-green-400 ac rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>AC</button>
+            <button class='bg-green-400 item rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>0</button>
+            <button class='bg-green-400 rounded-none delete hover:bg-green-700 w-10 h-10 text-white font-semibold'>Del</button>
+            <button class='bg-green-400 equal rounded-none hover:bg-green-700 w-10 h-10 text-white font-semibold'>=</button>
+        </div>
+        </div>
+    </div> -->
+
+    <div class="flex justify-center">
+        <div class="flex flex-col w-80">
+            <div>
+                <h1>Todolist</h1>
+            </div>
+            <div class="flex ">
+                <input type="text"
+                class='add_task'
+                placeholder="Custom focus style"
+                class="focus:outline-none border-blue-500 focus:ring focus:border-blue-700 w-1/2" />
+                <button  class='confirm_add_task bg-blue-800 ml-4 text-white font-semibold'>Thêm task</button>
+            </div>
+            <div>
+                <p class='text-red-800 hidden error_message '>Task không được để trống</p>
+            </div>
+            <div class='mt-20'>
+                <ul>
+                    <!-- <li class='flex justify-between'>
+                        <div class='flex flex-col justify-center'>
+                            <input type="checkbox">
+                        </div>
+                        <p>Go shopping</p>
+                        <button >x</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js'></script>
+    <script src='./scripts.js'></script>
+</body>
+</html>
